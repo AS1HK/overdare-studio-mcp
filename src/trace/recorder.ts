@@ -54,7 +54,7 @@ class Recorder {
       label: config.traceLabel ?? null,
       studioHost: config.host,
       studioPort: config.port,
-      mcpVersion: "0.2.0-alpha.1",
+      mcpVersion: "0.3.0",
       nodeVersion: process.version,
       platform: process.platform,
     }, null, 2));

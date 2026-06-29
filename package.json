@@ -1,6 +1,6 @@
 {
   "name": "overdare-studio-mcp",
-  "version": "0.2.0-alpha.1",
+  "version": "0.3.0",
   "description": "Unofficial MCP server for OVERDARE Studio — drive the editor over its local JSON-RPC port and .ovdrjm world file.",
   "license": "MIT",
   "type": "module",

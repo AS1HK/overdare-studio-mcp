@@ -3,9 +3,10 @@
 본 프로젝트는 [Keep a Changelog](https://keepachangelog.com/) 와
 [Semantic Versioning](https://semver.org/) 을 따른다.
 
-## [Unreleased]
+## [0.3.0] - 2026-06-30
 
-**Phase 4 완료** (asset import / action sequencer / publish). 기존 Stable Tool Contract / 파이프라인 위에 확장.
+첫 공개 릴리스. **Phase 4 완료** (asset import / action sequencer / publish) — 기존 Stable Tool Contract /
+쓰기 파이프라인 위에 확장. 전체 기능·특징은 [릴리스 노트](docs/releases/v0.3.0.md) 참고.
 
 ### Added
 - **인프라 `applyRpcMutation`** — 직접 RPC 변이용 백업 가드(applyWrite 의 형제, 같은 write lock 공유).
@@ -24,7 +25,7 @@
   (`smoke-asset.mjs`, `smoke-sequencer.mjs`, `smoke-publish.mjs` — 실제 publish 미발사).
 
 ### Notes
-- Phase 4 완료 — 13개 도구. 다음 마일스톤 태그(v0.3.0) 는 별도 판단.
+- 13개 도구. 첫 공개 에디션(클린 이력).
 
 ## [0.2.0-alpha.1] - 2026-06-29
 
