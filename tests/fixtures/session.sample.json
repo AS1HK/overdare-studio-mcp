@@ -1,0 +1,27 @@
+{
+  "recordedAt": "2026-06-29T00:00:00.000Z",
+  "label": "ci-sample",
+  "calls": [
+    {
+      "method": "level.browse",
+      "params": null,
+      "result": {
+        "level": [
+          { "guid": "G-PLAYERS", "name": "Players", "class": "Players" },
+          { "guid": "G-WORKSPACE", "name": "Workspace", "class": "Workspace",
+            "children": [{ "guid": "G-BASEPLATE", "name": "Baseplate", "class": "Part" }] }
+        ]
+      }
+    },
+    {
+      "method": "level.apply",
+      "params": null,
+      "result": { "success": true, "messages": [] }
+    },
+    {
+      "method": "level.save.file",
+      "params": null,
+      "result": { "success": true }
+    }
+  ]
+}

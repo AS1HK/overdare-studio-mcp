@@ -1,0 +1,33 @@
+{
+  "FileVersion": 1,
+  "MapObjectKeyIndex": 3,
+  "Root": {
+    "InstanceType": "DataModel",
+    "ActorGuid": "00000000000000000000000000000001",
+    "ObjectKey": 1,
+    "Name": "DataModel",
+    "LuaChildren": [
+      {
+        "InstanceType": "Workspace",
+        "ActorGuid": "00000000000000000000000000000002",
+        "ObjectKey": 2,
+        "Name": "Workspace",
+        "LuaChildren": [
+          {
+            "InstanceType": "Part",
+            "ActorGuid": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "ObjectKey": 3,
+            "Name": "MyPart",
+            "Size": { "X": 4, "Y": 1, "Z": 4 },
+            "Anchored": true,
+            "CanCollide": true,
+            "CanQuery": true,
+            "CanTouch": true,
+            "Color": { "R": 120, "G": 200, "B": 120 },
+            "Material": "Plastic"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Build
+        run: npm run build
+
+      - name: Unit + Golden tests (vitest)
+        run: npm test
+
+      # 라이브 Studio 가 없는 CI 에서는 replay 를 --dry 로 (세션 무결성 + shape 검증)
+      - name: Smoke (replay-only, dry)
+        run: node scripts/replay.mjs tests/fixtures/session.sample.json --dry

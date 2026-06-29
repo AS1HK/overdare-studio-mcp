@@ -1,0 +1,19 @@
+{
+  "FileVersion": 1,
+  "MapObjectKeyIndex": 2,
+  "Root": {
+    "InstanceType": "DataModel",
+    "ActorGuid": "00000000000000000000000000000001",
+    "ObjectKey": 1,
+    "Name": "DataModel",
+    "LuaChildren": [
+      {
+        "InstanceType": "Workspace",
+        "ActorGuid": "00000000000000000000000000000002",
+        "ObjectKey": 2,
+        "Name": "Workspace",
+        "LuaChildren": []
+      }
+    ]
+  }
+}

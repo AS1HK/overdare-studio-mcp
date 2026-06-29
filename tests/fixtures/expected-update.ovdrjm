@@ -1,0 +1,40 @@
+{
+  "FileVersion": 1,
+  "MapObjectKeyIndex": 4,
+  "Root": {
+    "InstanceType": "DataModel",
+    "ActorGuid": "00000000000000000000000000000001",
+    "ObjectKey": 1,
+    "Name": "DataModel",
+    "LuaChildren": [
+      {
+        "InstanceType": "Workspace",
+        "ActorGuid": "00000000000000000000000000000002",
+        "ObjectKey": 2,
+        "Name": "Workspace",
+        "LuaChildren": [
+          {
+            "InstanceType": "Part",
+            "ActorGuid": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA01",
+            "ObjectKey": 3,
+            "Name": "Renamed",
+            "Size": { "X": 4, "Y": 1, "Z": 4 },
+            "Anchored": true,
+            "Color": { "R": 200, "G": 50, "B": 50 },
+            "Material": "Plastic",
+            "LuaChildren": [
+              {
+                "InstanceType": "Part",
+                "ActorGuid": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA02",
+                "ObjectKey": 4,
+                "Name": "Child",
+                "Size": { "X": 1, "Y": 1, "Z": 1 },
+                "LuaChildren": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

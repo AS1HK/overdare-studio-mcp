@@ -1,0 +1,30 @@
+{
+  "level": [
+    { "guid": "G-PLAYERS", "name": "Players", "class": "Players" },
+    {
+      "guid": "G-WORKSPACE",
+      "name": "Workspace",
+      "class": "Workspace",
+      "children": [
+        { "guid": "G-CAMERA", "name": "Camera", "class": "Camera" },
+        { "guid": "G-BASEPLATE", "name": "Baseplate", "class": "Part" },
+        {
+          "guid": "G-FOLDER",
+          "name": "Props",
+          "class": "Folder",
+          "children": [
+            { "guid": "G-PART2", "name": "Crate", "class": "Part" }
+          ]
+        }
+      ]
+    },
+    {
+      "guid": "G-SSS",
+      "name": "ServerScriptService",
+      "class": "ServerScriptService",
+      "children": [
+        { "guid": "G-SCRIPT", "name": "Main", "class": "Script", "filename": "Main.lua" }
+      ]
+    }
+  ]
+}

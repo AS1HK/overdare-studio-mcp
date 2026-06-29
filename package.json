@@ -1,0 +1,50 @@
+{
+  "name": "overdare-studio-mcp",
+  "version": "0.2.0-alpha.1",
+  "description": "Unofficial MCP server for OVERDARE Studio — drive the editor over its local JSON-RPC port and .ovdrjm world file.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "overdare",
+    "overdare-studio",
+    "luau",
+    "game-development"
+  ],
+  "bin": {
+    "overdare-studio-mcp": "dist/server/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/server/index.ts",
+    "start": "node dist/server/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "replay": "node scripts/replay.mjs",
+    "smoke:write": "node scripts/smoke-write.mjs",
+    "gen:docs": "node scripts/gen-api-docs.mjs",
+    "ci": "npm run typecheck && npm run build && npm test && node scripts/replay.mjs tests/fixtures/session.sample.json --dry",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}

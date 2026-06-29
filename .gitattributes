@@ -1,0 +1,5 @@
+# 저장소 텍스트는 LF 로 정규화(크로스플랫폼 일관성).
+* text=auto eol=lf
+
+# .ovdrjm 픽스처는 JSON 텍스트 — LF.
+*.ovdrjm text eol=lf
